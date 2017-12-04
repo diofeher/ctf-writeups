@@ -1,2 +1,2 @@
 # ctf-writeups
-My solutions to all CTFs that I join.
+My solutions to all the CTFs that I join.
