@@ -1,3 +1,5 @@
+# NOT COMPLETE! I stuck on the reversal of s function
+
 from decimal import *
 from binascii import hexlify
 from binascii import unhexlify
