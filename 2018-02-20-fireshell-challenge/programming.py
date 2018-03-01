@@ -5,7 +5,7 @@ import telnetlib
 import requests
 import time
 
-# colors dictionary is only used for debugging, but could be removed along with line 35
+# colors dictionary is only used for debugging, but could be removed with line 35
 colors = {
     1: "azul",
     2: "amarelo",
