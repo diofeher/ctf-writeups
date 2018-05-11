@@ -1,16 +1,14 @@
-from matasano import score, xor_strings
+from matasano import score, xor_strings, break_single_xor, naive_score
 
-best_score = 0
+best_score = float('inf')
 best_text = ''
 
 with open('4.txt') as f:
     for line in f.readlines():
-        for i in range(256):
-            res = xor_strings(line.strip().decode('hex'), chr(i)*len(line))
-            points = score(res)
-            if points > best_score:
-                best_text = res
-                best_score = points
+        res, score = break_single_xor(line, score=naive_score)
+        if score < best_score:
+            best_text = res.strip()
+            best_score = score
 
-print best_score, best_text
-assert best_text.strip() == 'Now that the party is jumping'
+print best_text, best_score
+assert best_text == 'Now that the party is jumping'
