@@ -1,3 +1,8 @@
+Project Euler
+----------------------
+
+http://projecteuler.net
+
 Repository used to store my solutions to project Euler.
 
 Most of the solutions are from Sep 7, 2010
