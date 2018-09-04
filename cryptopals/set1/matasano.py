@@ -89,6 +89,8 @@ def break_single_xor(line, score=score):
 
 
 def ascii_to_bin(text):
+    if text == '':
+        return
     return bin(int(binascii.hexlify(text),16))[2:]
 
 
