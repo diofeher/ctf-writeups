@@ -39,8 +39,15 @@ grpcurl -insecure -d '{"creds":{"cid": "56df926161f7", "token": "dad72cb568a124f
 
 5)
 
-```shell
 Access it: https://35.207.157.20/56df926161f7/diofeher
 
-35C3_WePutV8InEverything_FlagLeakedOops
+```shell
+
+=== CONSOLE.LOG ===
+> getmapex(key) bohjoo1thiew5aC8pielae7Toh8Hua9k
+> flag decrypted 35C3_WePutV8InEverything_FlagLeakedOops
+> flag {"iv":"OJ65vih25EIhqnN5qDUzNw==","v":1,"iter":10000,"ks":128,"ts":64,"mode":"ccm","adata":"","cipher":"aes","salt":"tiH4VV0FKjA=","ct":"MJg68A+0D5SUXlyAdMX9kG/oBDWcuPkoIOwR6E2tHM/NmyfnmZOc6fK/KHxzPb4="}
+
 ```
+
+FLAG: 35C3_WePutV8InEverything_FlagLeakedOops
