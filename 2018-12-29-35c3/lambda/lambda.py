@@ -12,13 +12,13 @@ return {status: 200, response: \"\", code:this._getmapex}
 
 cmd = '''
 grpcurl -insecure -d '{
-    "creds":{
+    "creds": {
         "cid": "56df926161f7", "token": "dad72cb568a124f74988b9b22db062c18871adf0f8c516650ca238e96eff14c0"
-    },"handler":{
+    }, "handler": {
         "endpoint": "diofeher",
         "code":"function handle(args) {%s}"
-        }
-    }' 35.207.157.20:443 c3.Lambda/RegisterHandler
+    }
+}' 35.207.157.20:443 c3.Lambda/RegisterHandler
 ''' % code.strip().replace('\n', '')
 print cmd
 os.system(cmd)
