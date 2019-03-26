@@ -1,5 +1,5 @@
 # Usage
-Edit HOST inside `payload.c`, compile with `make`. Start `nc` and run `pwn.sh` inside the container.
+Edit HOST inside `new_runc`, Start `nc -nvlp <port>` and run `python3 sss.py`
 
 # Notes
 - This exploit is destructive: it'll overwrite `/usr/bin/docker-runc` binary *on the host* with the
@@ -15,7 +15,9 @@ More complete explanation [here](https://github.com/lxc/lxc/commit/6400238d08cdf
 Attacks
 
 https://www.twistlock.com/labs-blog/breaking-docker-via-runc-explaining-cve-2019-5736/
+
 https://www.openwall.com/lists/oss-security/2019/02/13/3
+
 https://www.twistlock.com/labs-blog/breaking-docker-via-runc-explaining-cve-2019-5736/
 
 https://raw.githubusercontent.com/twistlock/RunC-CVE-2019-5736/master/malicious_image_POC/overwrite_runc.c
