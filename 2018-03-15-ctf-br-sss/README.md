@@ -4,7 +4,7 @@ Edit HOST inside `new_runc`, Start `nc -nvlp <port>` and run `python3 sss.py`
 # Notes
 - This exploit is destructive: it'll overwrite `/usr/bin/docker-runc` binary *on the host* with the
 payload. It'll also overwrite `/bin/sh` inside the container.
-- Tested only on Debian 9.
+- Tested on Debian 9 and Ubuntu 18
 - No attempts were made to make it stable or reliable, it's only tested to work when a `docker exec
 <id> /bin/sh` is issued on the host.
 
@@ -12,7 +12,7 @@ More complete explanation [here](https://github.com/lxc/lxc/commit/6400238d08cdf
 
 
 -------
-Attacks
+Further reading
 
 https://www.twistlock.com/labs-blog/breaking-docker-via-runc-explaining-cve-2019-5736/
 
